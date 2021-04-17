@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/e_papers.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">E-Papers</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+  <div class="section">
+    <div class="row">
+      {% for data in e_papers %}
+      <div class="col-md-3">
+        <div class="thumb_hold">
+          <a href="{{ data.link }}" target="_blank">
+            <img src="/assets/img/{{ data.image }}" alt="{{ data.title }}">
+            <p class="center second_heading newspaper_title">{{ data.title }}</p>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
+{% block js %}{% endblock %}

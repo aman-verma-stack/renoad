@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/content_page.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">Terms &amp; Conditions</h1>
+        </div>
+    </div>
+</div>
+
+<div class="content_hold">
+<div class="container-fluid">
+    <div class="section">
+       {% for e in terms %}
+            {{ e.description |safe }}
+       {% endfor %}
+    </div>
+</div>
+</div>
+
+
+
+
+{% endblock %}
+{% block js %}{% endblock %}

@@ -1,0 +1,17 @@
+.content_hold h1,h2,h3,h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content_hold p{
+    font-size: 13px;
+}
+
+.content_hold ul{
+    margin: 0px;
+    padding: 0px 30px 10px 30px;
+}
+
+.content_hold li{
+    font-size: 13px;
+}

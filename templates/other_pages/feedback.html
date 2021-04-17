@@ -1,0 +1,49 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/content_page.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">Feedback</h1>
+        </div>
+    </div>
+</div>
+
+<div class="content_hold">
+    <div class="container">
+        <div class="section">
+            <div class="row justify-content-center">
+            <form method="POST" action="" class="col-md-8">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" required aria-describedby="emailHelp" placeholder="Enter First Name">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" required  placeholder="Enter Phone">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control"  placeholder="Enter Email">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <textarea name="" class="form-control" required rows="5" placeholder="Give Your Precious Feedback"></textarea>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+        </div>
+    </div>
+</div>
+        
+
+
+{% endblock %}
+{% block js %}{% endblock %}

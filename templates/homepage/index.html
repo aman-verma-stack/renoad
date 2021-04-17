@@ -1,0 +1,482 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/plugins/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/owl.theme.default.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/owl.theme.green.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/home.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="main_banner">
+    <div class="banner_caption">
+        <div class="banner_caption_inside">
+            <h1 class="top_heading">Would you like to Advertise?</h1>
+            <p class="secondary_heading text_white">Are you looking for business visibility? </p>
+        </div>
+    </div>
+</div>
+
+<div class="main_content">
+    <div class="section_alt">
+        <h1 class="content_heading center home_heading"><span class="main_head">We are one of the leading </span> Advertising Agency</h1>
+        <p class="second_heading center m_b_25">Book your newspaper advertisement at lowest price</p>
+        <p class="mid_content">
+            {% for e in data %}
+                {{ e.description }}
+            {% endfor %}
+        </p>
+
+    </div>
+</div>
+
+<div class="main_content">
+    <div class="section">
+        <h1 class="content_heading center home_heading"><span class="main_head">Leading Newspapers</span> To Advertise</h1>
+        <p class="second_heading center m_b_25">You can place your advertisement in
+        </p>
+
+    <div class="featured_section">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/01toi.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/02ht.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/03nbt.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/04hh.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/05jagran.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/06amar_ujala.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/07indian_express.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/12sahara.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/13patrika.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="newspaper_list">
+                <a href="/e-paper/">
+                    <img src="{% static 'img/newspaper_logo/14bhaskar.jpg' %}" alt="Times of india">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<div class="ads">
+    <div class="section_alt">
+            <h1 class="content_heading center home_heading"><span class="main_head">Packages for </span> Your Business</h1>
+            <p class="second_heading center m_b_25 text_grey">Get the best packages from us
+                Reno advertising is India’s simplest advertising agency! Through out service you can book ads in all the leading newspapers- we believe in delivering best</p>
+        <div class="container">
+            <div class="add_type">
+                <i class="fas fa-star"></i>
+                <ul class="main_ad_type">
+                    <li>
+                        <div class="ad_internal_main">
+                            <div class="ad_head">
+                                <h2>Appoinment</h2>
+                                <p>It helps to employers find the suitable candidate for a job and job seekers find the suitable job that matches their qualifications &amp; interests.</p>
+                                <h3 class="price"><i class="fas fa-rupee-sign"></i> 4500/-</h3>
+                            </div>
+                            <div class="ad_body">
+                                <ul>
+                                    <li>One Time Charge</li>
+                                    <li>Times Of India</li>
+                                    <li>TOI-SUN,WED, ET-WED, NBT-SUN,WED</li>
+                                    <li>Delhi NCR</li>
+                                    <li>5 Lines</li>
+                                </ul>
+                            </div>
+                            <div class="ad_book_btn">
+                                <a href="/quick/pay/" class="btn btn-primary">Book</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="ad_internal_main">
+                            <div class="ad_head">
+                                <h2>Change Of Name</h2>
+                                <p>if you have changed your name, then you can place the advertisement along the various media platforms.</p>
+                                <h3 class="price"><i class="fas fa-rupee-sign"></i> 650/-</h3>
+                            </div>
+                            <div class="ad_body">
+                                <ul>
+                                    <li>One Time Charge</li>
+                                    <li>Hindustan Times</li>
+                                    <li>HT-Any Day, HH-Any Day</li>
+                                    <li>Delhi NCR</li>
+                                    <li>5 Lines </li>
+                                </ul>
+                            </div>
+                            <div class="ad_book_btn">
+                                <a href="/quick/pay/" class="btn btn-primary">Book</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="ad_internal_main">
+                            <div class="ad_head">
+                                <h2>Property</h2>
+                                <p>if you are planning to buy or sell any property, then you can advertise with us at affordable prices.</p>
+                                <h3 class="price"><i class="fas fa-rupee-sign"></i> 4500/-</h3>
+                            </div>
+                            <div class="ad_body">
+                                <ul>
+                                    <li>One Time Charge</li>
+                                    <li>Hindustan Times</li>
+                                    <li>HT-SAT,SUN,THU, MINT-WED, HH-SUN,FRI </li>
+                                    <li>Delhi NCR</li>
+                                    <li>5 Lines</li>
+                                </ul>
+                            </div>
+                            <div class="ad_book_btn">
+                                <a href="/quick/pay/" class="btn btn-primary">Book</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul class="main_ad_type">
+                    <li>
+                        <div class="ad_internal_main">
+                            <div class="ad_head">
+                                <h2>Matrimonial</h2>
+                                <p>If you are looking for bride or groom, then book your space. We will help to find the right match for you.</p>
+                                <h3 class="price"><i class="fas fa-rupee-sign"></i> 4500/-</h3>
+                            </div>
+                            <div class="ad_body">
+                                <ul>
+                                    <li>One Time Charge</li>
+                                    <li>Hindustan Times </li>
+                                    <li>HT-SUN, HH-SUN</li>
+                                    <li>Delhi NCR, Lucknow, Chandigarh, UP-Country</li>
+                                    <li>5 Lines </li>
+                                </ul>
+                            </div>
+                            <div class="ad_book_btn">
+                                <a href="/quick/pay/" class="btn btn-primary">Book</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="ad_internal_main">
+                            <div class="ad_head">
+                                <h2>Lost &amp; Found</h2>
+                                <p> No worries when you lost your wallet, documents, passport, board certificate, driving license, identity card we assist you in booking their ads.</p>
+                                <h3 class="price"><i class="fas fa-rupee-sign"></i> 750/-</h3>
+                            </div>
+                            <div class="ad_body">
+                                <ul>
+                                    <li>One Time Charge</li>
+                                    <li>Hindustan Times </li>
+                                    <li>HT-Any Day, HH-Any Day  </li>
+                                    <li>Delhi NCR</li>
+                                    <li>5 Lines </li>
+                                </ul>
+                            </div>
+                            <div class="ad_book_btn">
+                                <a href="/quick/pay/" class="btn btn-primary">Book</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="ad_internal_main">
+                            <div class="ad_head">
+                                <h2>Public Notice</h2>
+                                <p>Are published to inform the general public about matters like Property dispute, Bank/Tender Notice, change company address etc.</p>
+                                <h3 class="price"><i class="fas fa-rupee-sign"></i> 7200/-</h3>
+                            </div>
+                            <div class="ad_body">
+                                <ul>
+                                    <li>One Time Charge</li>
+                                    <li>Hindustan Times</li>
+                                    <li>HT-Any Day, HH-Any Day </li>
+                                    <li>Delhi NCR</li>
+                                    <li>12SQCM</li>
+                                </ul>
+                            </div>
+                            <div class="ad_book_btn">
+                                <a href="/quick/pay/" class="btn btn-primary">Book</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="featured_section">
+        <div class="section">
+            <h1 class="content_heading center home_heading "><span class="main_head">Top Categories</span> To Advertise</h1>
+            <p class="second_heading center m_b_25 text_grey">We basically provide the top categories to publish your advertisements. </p>
+
+            <div class="featured_box_hold">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/astrology.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Astrology</p>
+                                            <p class="thumb_content">Book the place for daily feeds on astrology. We have many media and platform that you can select to deliver your add.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Astrology</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/change_of_name.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Change Of Name</p>
+                                            <p class="thumb_content">if you have changed your name, then you can place the advertisement along the various media platforms.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Change Of Name</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/education.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Education</p>
+                                            <p class="thumb_content">Any announcement or news related to education can be given to us.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Education</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/matrimonial.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Matrimonial</p>
+                                            <p class="thumb_content">If you are looking for bride or groom, then book your space. We will help to find the right match for you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Matrimonial</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/property_real_estate.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Real Estate</p>
+                                            <p class="thumb_content">if you are planning to buy or sell any property, then you can advertise with us.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Real Estate</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/tours_and_travel.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Tours and Travel</p>
+                                            <p class="thumb_content">We book your advertisement across many platforms. Just decide the medium of advertisement and let us know.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Tours and Travel</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/retail_shopping.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Retail Shopping</p>
+                                            <p class="thumb_content">Book your place in the leading newspaper if you are into retail sector. Also, you can advertise add related to shopping.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Retail Shopping</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img_hold">
+                                <img src="{% static 'img/categories/entertainment.jpg' %}" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="image_text_hold">
+                                        <div class="image_text_hold_inside">
+                                            <p class="thumb_heading">Entertainment</p>
+                                            <p class="thumb_content">Just book your space today itself if there is any news and announcement related to entertainment. Select the advertisement media and leave rest to us.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="bottom_thumb_heading">Entertainment</p> -->
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="center See_all">
+                    <a href="/category/" class="btn btn-primary">See All</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+<div class="review">
+    <div class="section">
+        <h1 class="center text_white content_heading f_weight_600">Our Client Review
+           </h1>
+        <p class="second_heading center text_white m_b_25">We provide best services to our clients and they give their genuine feedback. </p>
+        <div class="owl-carousel owl-theme">
+
+            {% for e in data.first.reviews_all.all %}
+            <div class="item">
+                <div class="content_hold">
+                    <p class="text_white">{{ e.description|safe }}</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="stars">
+                                {% for i in 0|rjust:e.rating %}
+                                    <i class="fa fa-star"></i>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="rev_name">
+                                <p class="second_heading text_white">Review By: {{ e.review_by }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="center review_button">
+            <a href="javascript:;" class="btn btn-primary">See All Review</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block footer_up %}{% include 'include/footer_up.html' %}{% endblock %}
+{% block js %}
+    <script src="{% static 'js/plugins/owl.carousel.min.js' %}"></script>
+    <script>
+    $(".review .owl-carousel").owlCarousel({loop:!0,margin:10,nav:!1,dots:!1,autoplay:!0,responsive:{0:{items:1},600:{items:1},1000:{items:1}}}),$(".featured_section .owl-carousel").owlCarousel({loop:!0,margin:10,nav:!1,dots:!1,autoplay:!0,responsive:{0:{items:1},600:{items:1},1000:{items:6}}});
+    </script>
+{% endblock %}

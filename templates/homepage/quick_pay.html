@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/quick_pay.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="quick_pay_hold center">
+<div class="section">
+    <img src="{% static 'img/renoad_pay.jpg' %}" alt="Quick Pay">
+</div>
+</div>
+
+<div class="quick_pay_download">
+    <p>To Download QR</p>
+    <a href="{% static 'img/renoad_pay.jpg' %}" download><i class="far fa-image"></i></a>
+</div>
+
+{% endblock %}
+{% block js %}{% endblock %}

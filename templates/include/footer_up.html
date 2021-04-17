@@ -1,0 +1,20 @@
+{% load static %}
+<div class="section">
+<div class="customer">
+    <div class="featured_section">
+        <div class="owl-carousel owl-theme">
+
+            {% for e in patners %}
+            <div class="item">
+                <div class="newspaper_list">
+                    <a href="{{ e.slug }}">
+                        <img src="/img/{{ e.image }}" alt="{{ e.alt }}" >
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+</div>

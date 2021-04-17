@@ -1,0 +1,56 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/blog_main.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">Blogs</h1>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="blog_main">
+        <div class="row ">
+            <div class="col-md-9">
+                <div class="row">
+
+
+                    {% for i in blog %}
+                        <div class="col-md-6">
+                        <div class="blog_main_hold">
+                            <img src="/assets/img/{{ i.image }}" alt="{{ i.title }}">
+                            <div class="blog_content_hold">
+                                <h2 class="secondary_heading">{{ i.title }}</h2>
+                                <p class="blog_type badge badge-primary">{{ i.categories.category }}</p>
+                                <p class="blog_short_content">{{ i.short_desc }}</p>
+                                <a href="details/{{ i.slug }}/">Read More</a>
+                            </div>
+                        </div>  
+                        </div>
+                    {% endfor %}
+
+
+                </div> 
+            </div>
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h2 class="second_heading">Other Blog Types</h2>
+                    <div class="other_blog_type">
+                        {% for i in other_blog_type %}
+                            <a href="/categories/details/{{ i.slug }}/"><span class="badge badge-primary">{{ i }}</span></a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block js %}{% endblock %}

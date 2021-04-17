@@ -1,0 +1,68 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/contact.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">Contact</h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="section">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="address">
+                    <p>Renomate India Pvt. Ltd.</p>
+                    <p>Noida : A Square, 14A, 3rd Floor, Sector - 73, Noida, UP - 201301</p>
+                    <p>Delhi : 244/107, School Block, Delhi - 110092 </p>
+                    <p>Support : info@renoad.com</p>
+                    <p>Call us : 9891799900, 9891799911, 9891799922</p>
+                </div>
+                <div class="location">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.2719514043765!2d77.37874681461186!3d28.59161729268337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefa9334733cb%3A0x8cd756bc78cda442!2sASQUARE+RENOMATE+NOIDA!5e0!3m2!1sen!2sin!4v1561309273585!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="reno_contact">
+                    <form method="POST" action="">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" required aria-describedby="emailHelp" placeholder="Enter First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control"  placeholder="Enter Last Name">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" required  placeholder="Enter Phone">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control"  placeholder="Enter Email">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <textarea name="" class="form-control" required rows="5" placeholder="Which type of Advertising you want!!"></textarea>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+{% block js %}{% endblock %}

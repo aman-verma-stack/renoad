@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/subcategories.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">Sub Categories</h1>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="categories_list">
+        <ul>
+            {% for e in data %}
+                <li>
+                    <a href="/category/{{ e.slug }}/">
+                        <img src="/img/{{ e.image }}" alt="{{ e.image }}"/>
+                    <p>{{ e.name }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+{% endblock %}
+{% block js %}{% endblock %}

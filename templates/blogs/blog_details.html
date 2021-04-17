@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/blog_details.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">Blogs Details</h1>
+        </div>
+    </div>
+</div>
+<div class="content_hold">
+<div class="container-fluid">   
+    <div class="section">
+       {% for e in blog_details %}
+             <div class="blog_banner">
+                <img src="/assets/img/{{ e.image }}" alt="{{ e.title }}">
+             </div>       
+            {{ e.description |safe }}
+       {% endfor %}
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
+{% block js %}{% endblock %}

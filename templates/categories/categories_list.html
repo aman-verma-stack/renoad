@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'css/categories_list.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="all_banner">
+    <div class="all_banner_inside">
+        <div class="container">
+            <h1 class="center top_heading text-white">Categories</h1>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="categories_list">
+        <ul>
+            {% for e in categories %} 
+                <li>
+                    <a href="{{ e.slug }}/">
+                        <img src="/img/{{ e.category_image }}" alt="{{ e.category_image }}"/>
+                    <p>{{ e.category }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+{% endblock %}
+{% block js %}{% endblock %}
