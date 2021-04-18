@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ description }}">
     <link rel="stylesheet" href="{% static 'css/plugins/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/fontawesome.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="icon" href="{% static '/img/fav_32.png' %}" type="image/gif" sizes="32x32">
@@ -26,6 +26,7 @@
     {% block footer_up %}{% endblock %}
     {% block footer %}{% include 'include/footer.html' %}{% endblock %}
     <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/plugins/all.js' %}"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     <script defer src="{% static 'fontawesome/js/fontawesome-all.min.js' %}"></script>
     {% block js %}{% endblock %}
